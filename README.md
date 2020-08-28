@@ -6,7 +6,8 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+    Ruby version: 2.6.6 (x64-mingw32)
+    Rails version: 5.2.4.3
 * System dependencies
 
 * Configuration
@@ -22,3 +23,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+* ...
+* Ultimo avance
