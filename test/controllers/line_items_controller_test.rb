@@ -5,12 +5,12 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     @line_item = line_items(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get line_items_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_line_item_url
     assert_response :success
   end
@@ -22,10 +22,8 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
     follow_redirect!
 
-    assert_select 'h2', 'Your Pragmatic Cart'
-    assert_select 'li', "1 \u00D7 Programming Ruby 1.9"
-
-    assert_redirected_to line_item_url(LineItem.last)
+    assert_select 'h2', 'Your Cart'
+    assert_select 'td', "Programming Ruby 1.9"
   end
 
   test 'should show line_item' do
